@@ -41,6 +41,7 @@ body {
     margin-top: 5px;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: center;
 }
 
 #navbar a {
@@ -121,7 +122,23 @@ body {
 }
 
 #part1 {
-    display: none;
+    /* background-color: white; */
+    position: relative;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 0px;
+    color: #DADADA;
+    text-align: center;
+    /* display: none; */
+}
+
+#dipHead {
+    font-size: 80px;
+}
+
+#wellcomeMsg {
+    font-size: 20px;
 }
 
 #part2 {
