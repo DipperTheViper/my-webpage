@@ -1,96 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <title>Dipper</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link href="http://fonts.cdnfonts.com/css/slackey" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
 </head>
 
 <body>
-    <div id="right-cloud">
-        <img src="cloud.svg">
-        <!-- whitch they gonna stay sticke to the side and they are blured -->
+    <div id="right-cloud" class="noselect">
+        <img src="SVG/cloud.svg">
     </div>
-    <div id="left-cloud">
-        <img src="cloud.svg">
-        <!-- whitch they gonna stay sticke to the side and they are blured -->
+    <div id="left-cloud" class="noselect">
+        <img src="SVG/cloud.svg">
     </div>
     <div id="navbar">
-        <div id="home"><a href="#"> Home</a></div>
-        <div id="aboutMe"> <a href="#"> About me</a></div>
-        <div id="myPJ"><a href="#"> My projects</a></div>
-        <!-- a navbar on the top to accses the parts -->
+        <div id="home" class="navbar"><a href="#"> Home</a></div>
+        <div id="aboutMe" class="navbar"> <a href="#"> About me</a></div>
+        <div id="myPJ" class="navbar"><a href="#"> My projects</a></div>
     </div>
-    <div id="part1">
-        <div id="dipHead">
-            <h2>Dipper</h2>
+    <div id="part1" class="container , noselect">
+        <div id="dipHead" class="noselect">
+            <h1>Dipper</h1>
         </div>
-        <div id="wellcomeMsg">
+        <div id="wellcomeMsg" class="noselect">
             <p>Hi, my name is Mahdi.</br>Wellcome to my webpage!</br>I see this webpage as my resume</br>contact me if you are intrested :)</p>
         </div>
-
     </div>
 
-    <div id="part2">
+    <div id="part2" class="container , noselect">
         <div id="amHead">
             <h2>About me</h2>
         </div>
-        <div id="amPara">
-            <p>My full name is Mahdi Kafash Kohan.</br>I'm I am fluent in HTML and CSS ,</br> also I'm fimiliar with JS, JQuery, SASS, Bootstrap, Python and C++. </br><strong>I learned self-Tutorial</strong>. </p>
+        <div id="amPara" class="noselect">
+            <p>My full name is Mahdi Kafash Kohan.</br>I'm fluent in HTML and CSS ,</br> also I'm fimiliar with JS, JQuery, SASS, Bootstrap, Python and C++. </br><strong>I learned self-Tutorial</strong>. </p>
         </div>
     </div>
 
     <div id="part3">
-        <div id="perePJBtn">
-
-        </div>
-        <div id="slider">
+        <a id="perePJBtn" href="#" target="_blank">
+            <div>
+                <img src="SVG/prebtn.svg">
+            </div>
+        </a>
+        <div id="slider" class="container">
             <div id="image">
-
+                <div id="X"><img src="images/X.png"></div>
             </div>
-            <div id="commnet">
-                <div id="commentHead">
-
-                </div>
-                <div id="commentPara">
-
-                </div>
-                <Div id="commentGithub">
-
+            <div id="commentHead">
+                <h2>Multiplication table</h2>
+            </div>
+            <div id="commentPara">
+                <p>in this project you have to choose the right answer to the multiplication question. </br> please open with desktop browser.
+                </p>
+            </div>
+            <a id="commentGithub" href="https://github.com/DipperTheViper/Multiplication-Table" target=”_blank”>
+                <Div>
+                    <img src="SVG/github.svg"><span id="git">GitHub</span>
                 </Div>
-                <div id="pjLink">
-
+            </a>
+            <a id="pjLink" href="#" target=”_blank”>
+                <div>
+                    <span id="pre">Preview</span><img id="pointer" src="SVG/poinetr.svg">
                 </div>
-            </div>
+            </a>
         </div>
-        <div id="nextPJBtn">
 
-        </div>
-        <div id="sliderHolder">
-            <!-- shows withch slide u are nd how much it lefts -->
-        </div>
+        <a id="nextPJBtn" href="#" target="_blank">
+            <div>
+                <img src="SVG/nextbtn.svg">
+            </div>
+        </a>
     </div>
 
     <div id="footer">
         <div id="scrolBtn">
-            <div id="scrolBorder"><img src="scrolBorder.svg"></div>
-            <div id="scrolLine"><img src="scolLine.svg"></div>
+            <div id="scrolBorder"><img src="SVG/scrolBorder.svg"></div>
+            <div id="scrolLine"><img src="/SVG/scolLine.svg"></div>
             <div id="scrolHead">
                 <h2>Scroll Down</h2>
             </div>
             <div id="scrolPara">
                 <p>To see <span id="scrolParaVal">About me</span> .</p>
             </div>
-            <!-- this btn has 2 option to take u up or down-->
-            <!-- a nice scroll btn so they can go to next part (down) and (up) should be unselectable -->
         </div>
         <div id="socialMedia">
-            <div id="instagram"><img src="instagram.svg"></div>
-            <div id="gmail"><img src="instagram.svg"></div>
-            <div id="telegram"><img src="instagram.svg"></div>
-            <!-- some logos whit links of my social media -->
+            <div id="instagram">
+                <a href="https://www.instagram.com/mahdiikafash" target=”_blank”><img src="/SVG/instagram.svg"></a>
+            </div>
+            <div id="gmail">
+                <a href="mailto:mahdikafashkohan@gmail.com" target=”_blank”><img src="/SVG/gmail.svg"></a>
+            </div>
+            <div id="telegram">
+                <a href="https://t.me/dipper_17" target=”_blank”><img src="/SVG/telegram.svg"></a>
+            </div>
         </div>
     </div>
 </body>
