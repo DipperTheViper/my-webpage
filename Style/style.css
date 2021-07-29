@@ -1,7 +1,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: url("/SVG/khat.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -14,25 +13,23 @@ body {
 
 .noselect {
     -webkit-user-select: none;
-    /* Safari */
     -moz-user-select: none;
-    /* Firefox */
     -ms-user-select: none;
-    /* IE10+/Edge */
     user-select: none;
-    /* Standard */
 }
 
 #right-cloud {
+    z-index: -10;
     position: fixed;
-    right: -25%;
-    top: 3%;
+    right: -350px;
+    top: 10px;
 }
 
 #left-cloud {
+    z-index: -10;
     position: fixed;
-    left: -25%;
-    top: 55%;
+    left: -350px;
+    top: 350px;
 }
 
 #navbar {
@@ -61,16 +58,19 @@ body {
     font-size: 22px;
 }
 
-#home a {
-    text-decoration: underline;
+#home {
+    text-decoration: none;
+    border-bottom: none;
 }
 
-#aboutMe a {
+#aboutMe {
     text-decoration: none;
+    border-bottom: none;
 }
 
-#myPJ a {
+#myPJ {
     text-decoration: none;
+    border-bottom: none;
 }
 
 #footer {
@@ -90,8 +90,9 @@ body {
 
 #scrolLine {
     position: fixed;
-    bottom: 43px;
-    right: 51px;
+    bottom: 40px;
+    right: 49px;
+    transition: all 0.5s ease;
 }
 
 #scrolHead {
@@ -131,30 +132,34 @@ body {
 }
 
 .container {
-    /* background-color: teal; */
     height: 400px;
     width: 800px;
 }
 
 #part1 {
-    display: none;
     text-align: center;
     color: #DADADA;
 }
 
 #dipHead {
-    font-size: 40px;
+    font-size: 70px;
     font-family: Slackey;
     line-height: 40px;
+    position: relative;
+    left: -60px;
+}
+
+#diphead .active {
+    left: 0px;
+    transition: all 0.5s ease-out;
 }
 
 #wellcomeMsg {
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #part2 {
-    display: none;
     text-align: center;
     color: #DADADA;
     background: linear-gradient(109.18deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
@@ -167,16 +172,23 @@ body {
     font-size: 40px;
     font-weight: bold;
     font-family: Roboto;
+    position: relative;
+    left: -60px;
+}
+
+#amHead .active {
+    left: 0px !important;
+    transition: all 0.5s ease-out;
 }
 
 #amPara {
     font-size: 25px;
     font-family: Roboto;
+    padding: 0 30px;
     text-align: left;
 }
 
 #part3 {
-    /* display: none; */
     text-align: center;
     width: 900px;
     height: 500px;
@@ -199,6 +211,7 @@ body {
     grid-area: 1/1/5/3;
     background: #C4C4C4;
     border-radius: 26px;
+    overflow: hidden;
 }
 
 #commentHead {

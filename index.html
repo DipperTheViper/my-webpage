@@ -6,81 +6,29 @@
     <title>Dipper</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="./Style/style.css">
     <link href="http://fonts.cdnfonts.com/css/slackey" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
 </head>
 
-<body>
+<body background="./SVG/khat.svg">
+
     <div id="right-cloud" class="noselect">
-        <img src="SVG/cloud.svg">
+        <img src="./SVG/cloud.svg">
     </div>
     <div id="left-cloud" class="noselect">
-        <img src="SVG/cloud.svg">
+        <img src="./SVG/cloud.svg">
     </div>
     <div id="navbar">
-        <div id="home" class="navbar"><a href="#"> Home</a></div>
-        <div id="aboutMe" class="navbar"> <a href="#"> About me</a></div>
-        <div id="myPJ" class="navbar"><a href="#"> My projects</a></div>
+        <div class="navbar"><a id="home" href="#"> Home</a></div>
+        <div class="navbar"> <a id="aboutMe" href="#"> About me</a></div>
+        <div class="navbar"><a id="myPJ" href="#"> My projects</a></div>
     </div>
-    <div id="part1" class="container , noselect">
-        <div id="dipHead" class="noselect">
-            <h1>Dipper</h1>
-        </div>
-        <div id="wellcomeMsg" class="noselect">
-            <p>Hi, my name is Mahdi.</br>Wellcome to my webpage!</br>I see this webpage as my resume</br>contact me if you are intrested :)</p>
-        </div>
-    </div>
-
-    <div id="part2" class="container , noselect">
-        <div id="amHead">
-            <h2>About me</h2>
-        </div>
-        <div id="amPara" class="noselect">
-            <p>My full name is Mahdi Kafash Kohan.</br>I'm fluent in HTML and CSS ,</br> also I'm fimiliar with JS, JQuery, SASS, Bootstrap, Python and C++. </br><strong>I learned self-Tutorial</strong>. </p>
-        </div>
-    </div>
-
-    <div id="part3">
-        <a id="perePJBtn" href="#" target="_blank">
-            <div>
-                <img src="SVG/prebtn.svg">
-            </div>
-        </a>
-        <div id="slider" class="container">
-            <div id="image">
-                <div id="X"><img src="images/X.png"></div>
-            </div>
-            <div id="commentHead">
-                <h2>Multiplication table</h2>
-            </div>
-            <div id="commentPara">
-                <p>in this project you have to choose the right answer to the multiplication question. </br> please open with desktop browser.
-                </p>
-            </div>
-            <a id="commentGithub" href="https://github.com/DipperTheViper/Multiplication-Table" target=”_blank”>
-                <Div>
-                    <img src="SVG/github.svg"><span id="git">GitHub</span>
-                </Div>
-            </a>
-            <a id="pjLink" href="#" target=”_blank”>
-                <div>
-                    <span id="pre">Preview</span><img id="pointer" src="SVG/poinetr.svg">
-                </div>
-            </a>
-        </div>
-
-        <a id="nextPJBtn" href="#" target="_blank">
-            <div>
-                <img src="SVG/nextbtn.svg">
-            </div>
-        </a>
-    </div>
-
+    <div id="part"></div>
     <div id="footer">
         <div id="scrolBtn">
-            <div id="scrolBorder"><img src="SVG/scrolBorder.svg"></div>
-            <div id="scrolLine"><img src="/SVG/scolLine.svg"></div>
+            <div id="scrolBorder"><img src="./SVG/scrolBorder.svg"></div>
+            <div id="scrolLine"><img src="./SVG/scolLine.svg"></div>
             <div id="scrolHead">
                 <h2>Scroll Down</h2>
             </div>
@@ -90,16 +38,17 @@
         </div>
         <div id="socialMedia">
             <div id="instagram">
-                <a href="https://www.instagram.com/mahdiikafash" target=”_blank”><img src="/SVG/instagram.svg"></a>
+                <a href="https://www.instagram.com/mahdiikafash" target=”_blank”><img src="./SVG/instagram.svg"></a>
             </div>
             <div id="gmail">
-                <a href="mailto:mahdikafashkohan@gmail.com" target=”_blank”><img src="/SVG/gmail.svg"></a>
+                <a href="mailto:mahdikafashkohan@gmail.com" target=”_blank”><img src="./SVG/gmail.svg"></a>
             </div>
             <div id="telegram">
-                <a href="https://t.me/dipper_17" target=”_blank”><img src="/SVG/telegram.svg"></a>
+                <a href="https://t.me/dipper_17" target=”_blank”><img src="./SVG/telegram.svg"></a>
             </div>
         </div>
     </div>
+    <script src="./JS/javascript.js"></script>
 </body>
 
 </html>
