@@ -355,8 +355,10 @@ body {
 
 #perePJBtn {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #nextPJBtn {
     margin-left: 10px;
+    cursor: pointer;
 }

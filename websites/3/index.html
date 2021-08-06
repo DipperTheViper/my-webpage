@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./STYLE/stylesheet.css">
+    <title>Lockscreen!</title>
+</head>
+
+<body onload="timer(); screenlock();">
+    <div class="lockIt center" id="1">
+        <a onclick="screenlock()"><img src="./SVG/unlocked.svg"></a>
+        <h2>Click to Lock screen!</h2>
+    </div>
+    <div class="unlockIt" id="2">
+        <span class="time" id="t"></span>
+        <span class="date" id="d"></span>
+        <a onclick="screenunlock()"><img src=" ./SVG/locked.svg "></a>
+        <h2>Dipper</h2>
+    </div>
+    <script src="./JS/JS.js"></script>
+</body>
+
+</html>
